@@ -7,6 +7,7 @@ public:
     ~GameObject(); //destructeur
 
     void render();
+    
 
 private:
     SDL_Renderer* renderer;

@@ -1,5 +1,11 @@
 #include "GameObject.h"
 #include "SDL.h"
+#include "SDL_image.h"
+
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <ctime>
 
 GameObject::GameObject(SDL_Renderer* renderer, const char* imagePath, int x, int y, int width, int height)
     : renderer(renderer) {
@@ -14,6 +20,11 @@ GameObject::GameObject(SDL_Renderer* renderer, const char* imagePath, int x, int
         rect.w = width;
         rect.h = height;
     }
+    else {
+        std::cout << "error";
+    }
+        
+
 }
 
 GameObject::~GameObject() {

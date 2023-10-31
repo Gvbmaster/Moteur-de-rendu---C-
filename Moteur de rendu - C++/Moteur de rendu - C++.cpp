@@ -5,11 +5,12 @@
 #include "Window.h"
 #include "GameObject.h"
 #include "SDL.h"
+#include "SDL_image.h"
 
 int main(int argc, char* argv[]) {
     Window window("Ma fenêtre SDL", 800, 600);
 
-    GameObject object(window.getRenderer(), "image.bmp", 100, 100, 50, 50);
+    GameObject object(window.getRenderer(), "panda.bmp", 100, 100, 50, 50);
 
     bool running = true;
 
